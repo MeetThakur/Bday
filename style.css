@@ -507,7 +507,7 @@ video{
             0 0 80px rgba(orange, 0.5) }
 }
 
-@media (min-width:600px) {
+@media (max-width:800px) {
   .light,.blow,.msg,.gift1,.gift2,.gift3,.last{
     margin-top: 70vh;
     width: 50%;
