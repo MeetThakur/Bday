@@ -20,10 +20,7 @@ const le = document.querySelector('.letter')
 
 
 
-lb.addEventListener('click',function(event){
-	today = new Date()
-	h = today.getHours()
-	if (h==00) {
+lb.addEventListener('click',function(event){
 	cover.style.backgroundColor = 'white';
 	lb.style.display = 'none';
 	setTimeout(function(){
@@ -31,8 +28,7 @@ lb.addEventListener('click',function(event){
 	},1000)
 	setTimeout(function(){
 		cb.style.display = 'block';
-	},3000)
-	}
+	},3000)
 })
 
 cb.addEventListener('click',function(event){
