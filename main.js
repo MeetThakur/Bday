@@ -23,7 +23,7 @@ const le = document.querySelector('.letter')
 lb.addEventListener('click',function(event){
 	today = new Date()
 	h = today.getHours()
-	if (h==18) {
+	if (h==00) {
 	cover.style.backgroundColor = 'white';
 	lb.style.display = 'none';
 	setTimeout(function(){
