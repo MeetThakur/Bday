@@ -22,7 +22,7 @@ h = today.getHours();
 
 
 lb.addEventListener('click',function(event){
-	if (h==00) {
+	if (h==18) {
 	cover.style.backgroundColor = 'white';
 	lb.style.display = 'none';
 	setTimeout(function(){
