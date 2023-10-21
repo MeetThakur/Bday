@@ -145,8 +145,16 @@ body{
   display: none;
 }
 
+.letter{
+  z-index: 5;
+  display:none;
+  justify-content: center;
+  align-items: center;
+}
 
-
+.letter img{
+  width: 50%;
+}
 
 
 
@@ -510,7 +518,11 @@ video{
 
 
 
-@media (max-width:600px) {
+@media (max-width:500px) {
+  .letter img{
+    width: 90%;
+  }
+
   .light,.blow,.msg,.gift1,.gift2,.gift3,.last{
     margin-top: 70vh;
     width: fit-content;

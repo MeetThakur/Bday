@@ -15,9 +15,14 @@ const v2 = document.querySelector('.v2')
 const v3 = document.querySelector('.v3')
 const la = document.querySelector('.last')
 const fi = document.querySelector('.first')
+const le = document.querySelector('.letter')
+
+today = new Date(),
+h = today.getHours();
 
 
 lb.addEventListener('click',function(event){
+	if (h==17) {
 	cover.style.backgroundColor = 'white';
 	lb.style.display = 'none';
 	setTimeout(function(){
@@ -26,6 +31,7 @@ lb.addEventListener('click',function(event){
 	setTimeout(function(){
 		cb.style.display = 'block';
 	},3000)
+	}
 })
 
 cb.addEventListener('click',function(event){
@@ -91,6 +97,9 @@ la.addEventListener('click',function(event){
 	v3.pause()
 	la.style.display = 'none';
 	v3.style.display = 'none';
+	setTimeout(function(){
+		le.style.display = 'flex'
+	})
 })
 
 
