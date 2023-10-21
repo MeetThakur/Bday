@@ -17,11 +17,12 @@ const la = document.querySelector('.last')
 const fi = document.querySelector('.first')
 const le = document.querySelector('.letter')
 
-today = new Date(),
-h = today.getHours();
+
 
 
 lb.addEventListener('click',function(event){
+	today = new Date()
+	h = today.getHours()
 	if (h==18) {
 	cover.style.backgroundColor = 'white';
 	lb.style.display = 'none';
